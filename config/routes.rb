@@ -1,4 +1,5 @@
 SeventhSeaTracker::Application.routes.draw do
+  resources :combats
   resources :characters
   devise_for :users
   get "static_pages/home"
