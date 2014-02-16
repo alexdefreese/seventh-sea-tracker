@@ -2,6 +2,7 @@ SeventhSeaTracker::Application.routes.draw do
   resources :combat_states, only: [:new, :create]
   resources :combats
   resources :characters
+  resources :action_dice, only: :create
   devise_for :users
   get "static_pages/home"
   # The priority is based upon order of creation: first created -> highest priority.
