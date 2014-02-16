@@ -1,4 +1,5 @@
 SeventhSeaTracker::Application.routes.draw do
+  resources :combat_states, only: [:new, :create]
   resources :combats
   resources :characters
   devise_for :users
