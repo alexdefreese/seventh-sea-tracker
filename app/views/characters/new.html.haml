@@ -1,2 +1,9 @@
-%h1 Characters#new
-%p Find me in app/views/characters/new.html.haml
+%h1 New Character
+
+= form_for @character do |f|
+	.form-group
+		= f.label :name
+		= f.text_field :name
+	.form-group
+		= f.label :panache
+		= f.text_field :panache
